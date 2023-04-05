@@ -17,7 +17,7 @@
     "resourceGroupName": {
       "value": "${AZURE_RESOURCEGROUPNAME}"
     },
-     "resourceGroupTags": {
+     "azureTags": {
       "value": "${AZURE_TAGS}"
     }
   }
