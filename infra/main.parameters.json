@@ -15,7 +15,10 @@
       "value": "${USE_APIM=false}"
     },
     "resourceGroupName": {
-      "value": "${AZURE_RESOURCEGROUPNAME}
+      "value": "${AZURE_RESOURCEGROUPNAME}"
+    },
+     "resourceGroupTags": {
+      "value": "${AZURE_TAGS}"
     }
   }
 }
