@@ -41,7 +41,7 @@ var rgTags = empty(azureTags) ? base64ToJson(azureTags) : {}
 resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: !empty(resourceGroupName) ? resourceGroupName : '${abbrs.resourcesResourceGroups}${environmentName}'
   location: location
-  tags: rgTags
+  tags: union(rgTags, tags)
 }
 
 // The application frontend
